@@ -1,6 +1,7 @@
 import PsBadge from "@/components/Ps/PsBedge";
 import PsButton from "@/components/Ps/PsButton";
 import PsInput from "@/components/Ps/PsInput";
+import PsSVG from "@/components/Ps/PsSVG";
 import PsTextArea from "@/components/Ps/PsTextArea";
 
 export default function Home() {
@@ -12,6 +13,8 @@ export default function Home() {
       <PsInput label="Testing" error="testing testing" />
       <PsTextArea fullHegiht={true} fullWidth={true} label="Testing" />
       <PsBadge>Hallo, World</PsBadge>
+      {/*  */}
+      <PsSVG name="mail" />
     </div>
   );
 }

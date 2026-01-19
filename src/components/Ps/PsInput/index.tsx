@@ -29,7 +29,7 @@ const PsInput = React.forwardRef<HTMLInputElement, PsInputPropTypes>(
           ref={ref}
           {...props}
           className={cn(
-            "rounded-[10px] border-2 border-black px-2 py-1 text-sm shadow-sm outline-none transition-colors focus:ring-0",
+            "rounded-[10px] border-2 border-black px-2 py-1.5 text-m shadow-sm outline-none transition-colors focus:ring-0",
             "disabled:cursor-not-allowed disabled:border-gray-500 disabled:text-gray-500",
             fullWidth ? "w-full" : "max-w-[300px]",
             className,

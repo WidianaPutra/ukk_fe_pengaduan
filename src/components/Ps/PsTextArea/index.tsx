@@ -36,7 +36,7 @@ const PsTextArea = ({
           "resize-none rounded-[10px] border-2 border-black px-2 py-1 text-sm shadow-sm outline-none transition-colors",
           "disabled:cursor-not-allowed disabled:border-gray-500 disabled:text-gray-500",
           "focus:ring-0",
-          fullHegiht ? "h-[200px]" : "h-auto",
+          fullHegiht ? "h-[130px]" : "h-auto",
           fullWidth ? "w-full" : "max-w-[300px]",
         )}
         {...props}
