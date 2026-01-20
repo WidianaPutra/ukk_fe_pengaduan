@@ -22,7 +22,7 @@ const PsButton = ({
   return (
     <button
       className={cn(
-        `rounded-[15px] px-7 py-2 text-[18px] hover:cursor-pointer`,
+        `rounded-[10px] px-7 py-1.5 text-[18px] hover:cursor-pointer`,
         variants[variant],
         classname,
       )}

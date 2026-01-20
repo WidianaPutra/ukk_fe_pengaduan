@@ -5,11 +5,22 @@ interface PsInputPropTypes extends React.InputHTMLAttributes<HTMLInputElement> {
   label?: string;
   fullWidth?: boolean;
   parentClassName?: string;
+  value?: string;
   error?: string;
 }
 
 const PsInput = React.forwardRef<HTMLInputElement, PsInputPropTypes>(
-  ({ label, fullWidth = false, parentClassName, className, ...props }, ref) => {
+  (
+    {
+      label,
+      fullWidth = false,
+      parentClassName,
+      className,
+      value = undefined,
+      ...props
+    },
+    ref,
+  ) => {
     const id = useId();
     return (
       <div
@@ -28,8 +39,9 @@ const PsInput = React.forwardRef<HTMLInputElement, PsInputPropTypes>(
           id={id}
           ref={ref}
           {...props}
+          value={value}
           className={cn(
-            "rounded-[10px] border-2 border-black px-2 py-1.5 text-m shadow-sm outline-none transition-colors focus:ring-0",
+            "text-m rounded-[10px] border-2 border-black px-2 py-1.5 shadow-sm outline-none transition-colors focus:ring-0",
             "disabled:cursor-not-allowed disabled:border-gray-500 disabled:text-gray-500",
             fullWidth ? "w-full" : "max-w-[300px]",
             className,
